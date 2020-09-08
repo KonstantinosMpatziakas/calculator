@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+     <link rel="stylesheet" type="text/css" href="style.css">
+     <script type="text/javascript" src="cacl.js"></script>
+  </head>
+  <body>
+    <div class="calculator card">
+      <input type="text" id="input" class="calculator-screen z-depth-1" placeholder="0">
+      <div class="calculator-keys">
+         <button type="button" class="operator btn btn-info" value="+" onclick="getOperator('+')">+</button>
+         <button type="button" class="operator btn btn-info" value="-" onclick="getOperator('-')">-</button>
+         <button type="button" class="operator btn btn-info" value="*" onclick="getOperator('*')">&times;</button>
+         <button type="button" class="operator btn btn-info" value="/" onclick="getOperator('/')">&divide;</button>
+         <button type="button" value="7" class="btn btn-light waves-effect" onclick="insert(7)">7</button>
+          <button type="button" value="8" class="btn btn-light waves-effect" onclick="insert(8)">8</button>
+          <button type="button" value="9" class="btn btn-light waves-effect" onclick="insert(9)">9</button>
+
+
+          <button type="button" value="4" class="btn btn-light waves-effect" onclick="insert(4)">4</button>
+          <button type="button" value="5" class="btn btn-light waves-effect" onclick="insert(5)">5</button>
+          <button type="button" value="6" class="btn btn-light waves-effect" onclick="insert(6)">6</button>
+
+
+          <button type="button" value="1" class="btn btn-light waves-effect" onclick="insert(1)">1</button>
+          <button type="button" value="2" class="btn btn-light waves-effect" onclick="insert(2)">2</button>
+          <button type="button" value="3" class="btn btn-light waves-effect" onclick="insert(3)">3</button>
+
+
+          <button type="button" value="0" class="btn btn-light waves-effect">0</button>
+          <button type="button" class="decimal function btn btn-dark" value="." onclick="insert('.')">.</button>
+          <button type="button" class="all-clear function btn btn-danger btn-sm" value="all-clear" onclick="clearScreen()">AC</button>
+
+          <button id="cal" type="button" class="equal-sign operator btn btn-primary" value="=" onclick="calculate()">=</button>
+
+      </div>
+    </div>
+  </body>
+</html>
